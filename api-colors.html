@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API COLORS</title>
     <script defer src="api-colors.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,11 +24,14 @@
         </select>
         <button id="color-btn">Get Color Scheme</button>
     </header>
-    <div class="root"></div>
-
+    <div id="root"></div>
     <style>
         * {
             margin: 0;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
         }
 
         header {
@@ -34,6 +40,8 @@
             width: 100%;
             padding: 25px 15px;
             background-color: #efefef;
+            position: fixed;
+            z-index: 100;
         }
 
         button,input, select, option {
@@ -53,6 +61,12 @@
             margin: 0 30px;
             width: 60%;
             text-indent: 10px;
+        }
+
+        #root {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
         }
 
     </style>
