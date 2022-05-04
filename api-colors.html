@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API COLORS</title>
+    <script defer src="api-colors.js"></script>
+</head>
+<body>
+    <header>
+        <input type="color" id="color-input">
+        <select name="color" id="color-select">
+            <option value="Monochrome" selected>Monochrome</option>
+            <option value="Monochrome-dark">Monochrome-dark</option>
+            <option value="Monochrome-light">Monochrome-light</option>
+            <option value="Analogic">Analogic</option>
+            <option value="Complement">Complement</option>
+            <option value="Analogic-complement">Analogic-complement</option>
+            <option value="Triad">Triad</option>
+        </select>
+        <button id="color-btn">Get Color Scheme</button>
+    </header>
+    <div class="root"></div>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: stretch;
+            width: 100%;
+            padding: 25px 15px;
+            background-color: #efefef;
+        }
+
+        button,input, select, option {
+            height: 42px;
+        }
+
+        input {
+            width: 52px;
+        }
+
+        option {
+            margin: 5px;
+            border-radius: 0;
+        }
+
+        select {
+            margin: 0 30px;
+            width: 60%;
+            text-indent: 10px;
+        }
+
+    </style>
+</body>
+</html>
