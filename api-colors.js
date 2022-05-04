@@ -15,14 +15,11 @@ btnInput.addEventListener('click', function(e) {
     getColor(color,scheme)
 })
 
-
-
 function getColor(color = 'ffffff', mode = 'triad') {
     fetch(`https://www.thecolorapi.com/scheme?hex=${color}&mode=${mode}&count=6`)
         .then(res => res.json())
         .then(data => {
             data.colors.forEach( x => {
-                //root.removeChild(aux)
                 let aux = document.createElement('div')
                 aux.style.position = 'relative'
                 aux.style.height = '100%'
@@ -40,5 +37,4 @@ function getColor(color = 'ffffff', mode = 'triad') {
                 root.appendChild(aux)
             })
         })
-
 }
